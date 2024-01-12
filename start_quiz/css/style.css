@@ -1,0 +1,349 @@
+
+@import "null.css";
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3em 10%;
+    background: rgba(128, 31, 166, 0.214);
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: 'Spectral', serif;
+    transition: top 0.3s;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    font-weight:700 ;
+    font-family: 'Spectral', serif;
+    transition: 0.5s;
+  }
+  .navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: 'Spectral', serif;
+    transition: transform 0.5s, color 0.5s;
+  }
+  
+  .navbar a:hover {
+    font-size: 1.5rem;
+    font-family: 'Spectral', serif;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Adjusted left position for padding */
+    width: 0; /* Set initial width to 0 */
+    height: 100%;
+    box-shadow: 10px 10px 100px 6px rgba(255, 255, 255, 0.9);
+    transition: width 0.9s;
+    border-radius: 20px;
+    font-family: 'Spectral', serif;
+  }
+  
+  .navbar a:hover::before {
+    width: calc(100% + 30px); /* Adjusted width for padding on both sides */
+    font-family: 'Spectral', serif;
+  }
+  
+  
+  
+  
+  
+  
+  header .logo:hover{
+    transform: scale(1.2);
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Spectral', serif;
+  }
+body{
+    background: url(/start_quiz/img/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+    text-align: center;
+    padding: 50px 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Spectral', serif;
+    overflow: hidden;
+}
+
+.header__title{
+    display: inline-flex;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: -3px -3px 20px 20px white;
+   font-family: 'Spectral', serif;
+}
+
+.header__link{
+    border-bottom: 2px dotted black;
+   font-family: 'Spectral', serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+   font-family: 'Spectral', serif;
+    margin-top: 70px;
+}
+
+/* Предупреждение */
+.warning{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+   font-family: 'Spectral', serif;
+}
+
+/* Тест на skills верстальщика */
+.quiz {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    border-radius:30px;
+   font-family: 'Spectral', serif;
+    
+}
+
+.quiz__header{
+    padding: 20px;
+    font-size: 20px;
+   font-family: 'Spectral', serif;
+    font-weight: 600;
+}
+
+.quiz__progress {
+    height: 10px;
+    border-radius: 30px;
+    background-color: rgb(232, 232, 232);
+   font-family: 'Spectral', serif;
+}
+
+.quiz__progress-inner {
+    height: 100%;
+    border-radius: 30px;
+    width: 70%;
+    background: rgb(271, 23, 106);
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(90deg, rgb(71, 23, 106), rgb(170, 8, 157));
+   font-family: 'Spectral', serif;
+}
+
+
+.quiz__content{
+    padding: 30px 30px 20px;
+    flex: 1 0 auto;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__title{
+    font-size: 25px;
+    font-weight: 600;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__list{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 20px 0px;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__option {
+    background: rgba(204, 113, 229, 0.285);
+    /*border: 1px solid #84c5fe;*/
+    border-radius: 30px;
+    padding: 8px 15px;
+    min-height: 44px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+    border: 1px solid #560272;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__option:hover{
+    color: #000000;
+    background: rgb(204, 113, 229);
+   font-family: 'Spectral', serif;
+   
+    
+}
+
+.quiz__option.correct{
+    /*color: #155724;*/
+    background: #d4edda;
+    border: 1px solid #02721c;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__option.incorrect{
+    /*color: #721c24;*/
+    background: #ee7d8660;
+    border: 1px solid rgb(255, 0, 0);
+   font-family: 'Spectral', serif;
+}
+
+.quiz__option.disabled{
+    pointer-events: none;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__footer{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgrey;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__total{
+    display: flex;
+    align-items: center;
+   font-family: 'Spectral', serif;
+}
+
+.quiz__next-btn{
+    height: 40px;
+    padding: 0 13px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 30px;
+    background: #640085;
+    transition: 0.3s;
+   font-family: 'Spectral', serif;
+    
+}
+.quiz__next-btn:hover{
+    color: #ffffff;
+  background-color: #8602b2;
+ font-family: 'Spectral', serif;
+  
+  
+
+}
+/* Выводим результаты теста */
+.result{
+    max-width: 450px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+   font-family: 'Spectral', serif;
+}
+
+.result__ozenka{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    font-weight: 500px;
+   font-family: 'Spectral', serif;
+    margin-top: 20px;
+}
+
+.result h2{
+    
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+   font-family: 'Spectral', serif;
+}
+
+.result__title{
+    font-size: 22px;
+    font-weight: 550;
+    text-align: center;
+   font-family: 'Spectral', serif;
+}
+
+.result__text{
+    margin: 15px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+   font-family: 'Spectral', serif;
+}
+
+.result__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   font-family: 'Spectral', serif;
+}
+
+.result__restart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    padding: 10px;
+    font-size: 18px;
+    
+    border-radius: 30px;
+    color: #fff;
+    border-radius: 30px;
+    background: #640085;
+    transition: 0.3s;
+   font-family: 'Spectral', serif;
+}
+
+.result__restart:hover{
+    color: #ffffff;
+  background-color: #8602b2;
+ font-family: 'Spectral', serif;
+  
+  
+
+}
+
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: white;
+   font-family: 'Spectral', serif;
+}
+
+.footer__link{
+    color: black;
+   font-family: 'Spectral', serif;
+}

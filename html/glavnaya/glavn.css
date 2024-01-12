@@ -1,0 +1,332 @@
+
+
+body {
+  margin: 0;
+  font-family: 'Spectral', serif;
+}
+
+.str1 {
+  background-image: url(Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+  background-attachment: fixed;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 730px;
+  width: 100%;
+  background-position: 0 0;
+  margin: 0;
+  font-family: 'Spectral', serif;
+}
+
+.nazv {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 690px;
+  width: 90%;
+  padding: 40px;
+  font-family: 'Spectral', serif;
+}
+
+.nazv h1 {
+  font-size: 150px;
+  color: white;
+  font-family: 'Spectral', serif;
+  margin: 90px 0 0 0;
+  position: relative;
+  overflow: hidden;
+  transition: color 1s ease-in-out;
+}
+
+
+
+
+
+
+.nazv p {
+  font-size: 50px;
+  color: white;
+  font-family: 'Spectral', serif;
+  margin: 0 10px 0px 10px; /* Убираем отступы */
+  
+  
+}
+.str2{
+  background-color:white;
+  background-attachment: scroll;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+  background-position: 0 0;
+  margin: 0;
+}
+.opisanie {
+  float: left;
+  height: 200px;
+  width: 800px;
+  color:black;
+  font-family: 'Spectral', serif;
+  margin: 180px 50px 0 100px;
+
+}
+.opisanie p{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Spectral', serif;
+}
+.img img{
+  height: 80vh;
+  width: 60vh;
+  float: right;
+  margin: 80px 50px 0 0;
+  border-radius:50px;
+}
+.button_div{
+ 
+  
+  font-size: 18px;
+  margin: 0 0 0;
+  align-items: center;
+  font-family: 'Spectral', serif;
+  
+    
+  
+}
+.infbut {
+  border: 3px solid; /* граница */
+  background-color: transparent;
+  width: 220px;
+  height: 70px;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; /* добавлены свойства для плавного перехода */
+  color: rgba(126, 42, 149, 0.714);
+  font-size: 25px;
+  border-radius: 90px;
+  font-family: 'Spectral', serif;
+  margin: 110px 0 0px 390px;
+  
+  
+}
+.infbut:hover {
+  color: white;
+  background-color: rgb(127, 42, 149);
+  box-shadow: 10px 10px 100px 6px rgb(127, 42, 149);
+  border: 3px solid transparent; /* убираем границу при наведении */
+  width: 220px;
+  height: 70px;
+  font-family: 'Spectral', serif;
+}
+.str3{
+  background:url(/html/glavnaya/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+  background-attachment: fixed;
+  background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 750px;
+  width: 100%;
+  background-position: 0 0;
+  margin: 0;
+  padding: 70px 0 0 0;
+
+  
+    
+}
+.str3 h3{
+  color:white;
+  font-size: 70px;
+  margin: 0px 0 0 60px;
+  font-family: 'Spectral', serif;
+}
+.flex-container{
+  margin:130px 30px 0 40px;
+  
+}
+.flex-item {
+  width: 420px;
+  height: 300px;
+  margin:0px 9px 0 9px;
+  display: inline-block;
+  vertical-align: top;
+  
+  font-size: 30px;
+  background-color:white;
+  border-radius:50px;
+  padding: 20px 20px 20px 20px;
+  
+  
+}
+.flex-item img{
+  float: right;
+  margin: -150px 0 0 0;
+}
+.button1_div{
+  font-family: 'Spectral', serif;
+  
+  font-size: 18px;
+  margin: 0 0 0;
+  align-items: center;
+  
+    
+  
+}
+.but1,.but2, .but3 {
+  border: 3px solid; /* граница */
+  background-color: transparent;
+  width: 220px;
+  height: 70px;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; /* добавлены свойства для плавного перехода */
+  color: rgba(126, 42, 149, 0.714);
+  font-size: 25px;
+  border-radius: 90px;
+  font-family: 'Spectral', serif;
+  margin: 10px 0 0px 0px;
+  
+  
+}
+.but1:hover,.but2:hover, .but3:hover {
+  color: white;
+  background-color: rgb(127, 42, 149);
+  box-shadow: 10px 10px 100px 6px rgb(127, 42, 149);
+  border: 3px solid transparent; /* убираем границу при наведении */
+  width: 220px;
+  height: 70px;
+  font-family: 'Spectral', serif;
+}
+#p1{
+  color:green;
+  font-family: 'Spectral', serif;
+}
+#p2,#p3{
+  color:rgb(255, 234, 0);
+  font-family: 'Spectral', serif;
+}
+.button3_div{
+ 
+  
+  font-size: 18px;
+  margin: 100px 0 0;
+  align-items: center;
+  font-family: 'Spectral', serif;
+  
+    
+  
+}
+.but_vse {
+  border: 3px solid; /* граница */
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; /* добавлены свойства для плавного перехода */
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  border-radius: 90px;
+  font-family: 'Spectral', serif;
+  margin: -40px 40px 0px 0px;
+  float: right;
+  
+  
+}
+.but_vse:hover {
+  color: rgb(127, 42, 149);
+  background-color: rgba(255, 255, 255, 0.995);
+  box-shadow: 10px 10px 100px 6px rgb(255, 255, 255);
+  border: 3px solid transparent; /* убираем границу при наведении */
+  width: 200px;
+  height: 50px;
+  font-family: 'Spectral', serif;
+  float: right;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* или другая высота, которую вы хотите использовать для подвала */
+  margin: 0;
+}
+
+footer img {
+  height: 80%;
+  width: 80%;
+}
+/*навигация меню*/
+
+
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  padding: 1.3em 10%;
+  background: rgba(128, 31, 166, 0.214);
+  backdrop-filter: blur(50px);
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  font-family: 'Spectral', serif;
+  transition: top 0.3s;
+
+  
+}
+
+
+.logo{
+  font-size: 2rem;
+  color:white;
+  text-decoration: none;
+  font-weight:700 ;
+  font-family: 'Spectral', serif;
+  transition: 0.5s;
+  
+}
+.navbar a {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  font-family: 'Spectral', serif;
+  transition: transform 0.5s, color 0.5s;
+}
+
+.navbar a:hover {
+  font-size: 1.5rem;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px; /* Adjusted left position for padding */
+  width: 0; /* Set initial width to 0 */
+  height: 100%;
+  box-shadow: 10px 10px 100px 6px rgba(255, 255, 255, 0.9);
+  transition: width 0.9s;
+  border-radius: 40px;
+}
+
+.navbar a:hover::before {
+  width: calc(100% + 30px); /* Adjusted width for padding on both sides */
+}
+
+
+
+
+
+
+header .logo:hover{
+  transform: scale(1.2);
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Spectral', serif;
+}
+
+
+

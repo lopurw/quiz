@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgQuiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600;700;900&family=Spectral:wght@500;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;600;700;900&family=Spectral:wght@800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">ProgQuiz</a>
+        <nav class="navbar">
+          <a href="/html/glavnaya/glavn.html">Главная</a>
+          <a href="/html/perehodnik/per.html">О языках</a>
+          <a href="/html/vse_testui/vse_testui.html">Тесты</a>
+        </nav>
+      </header>
+
+        <main class="main">
+            <!-- Предупреждение -->
+            <div class="warning hidden">
+                В тесте нет вопросов, <br> заполните и возвращайтесь!
+            </div>
+
+            <!-- Тест на skills верстальщика -->
+            <div class="quiz hidden">
+                <h2 class="quiz__header">Python : любитель</h2>
+                <div class="quiz__progress">
+                    <div class="quiz__progress-inner"></div>
+                </div>
+                <div class="quiz__content">
+                    <h3 class="quiz__title">
+                        <!-- Задаем значение в JavaScript -->
+                    </h3>
+                    <ul class="quiz__list">
+                        <!-- Задаем значение в JavaScript -->
+                    </ul>
+                </div>
+                <div class="quiz__footer">
+                    <div class="quiz__total">
+                        <!-- Задаем значение в JavaScript -->
+                       
+                    </div>
+                    <button class="quiz__next-btn">Следующий</button>
+                </div>
+            </div>
+
+            <!-- Выводим результаты теста -->
+            <div class="result hidden">
+                <h2>Ваша оценка</h2>
+                <div class="result__ozenka">
+                    
+                </div>
+                
+                <div class="result__text">
+                    <!-- Задаем значение в JavaScript -->
+                </div>
+                <div class="result__btn">
+                    <a class="result__restart" href="/start_quiz/index_p2.html">Начать заново</a>
+                </div>
+            </div>
+        </main>
+
+        
+    </div>
+    <script src="./js/questions_p2.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,234 @@
+body{
+    display:flex;
+    margin:0;
+    padding:0;
+    min-height: 100vh;
+    background-size: no-repeat;
+  background-position: center;
+  background-size: cover;
+    justify-content: center;
+    align-items: center;
+    
+    background-image:url(/html/glavnaya/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+  }
+  
+  .container{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    
+  }
+  
+  .container .card{
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .container .card .face{
+    width:300px;
+    height: 200px;
+    transition:.4s;
+    
+  }
+  
+  .container .card .face.face1{
+    position: relative;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    border-radius:50px;
+    
+  }
+  
+  .container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px rgb(181, 7, 234),
+      inset 20px 0 80px rgb(162, 59, 162),
+      inset -20px 0 80px rgb(255, 255, 255),
+      inset 20px 0 300px rgb(255, 255, 255),
+      inset -20px 0 300px rgb(215, 7, 243),
+      0 0 50px rgb(242, 197, 255),
+      -10px 0 80px #f0f,
+      10px 0 80px rgb(255, 255, 255);
+      border-radius:0px;
+    
+     
+  }
+  
+  
+  .container .card .face.face1 .content{
+    
+    transition:  0.5s;
+    text-align: center;
+    
+    
+     
+    
+    
+   
+  
+  }
+  
+  .container .card:hover .face.face1 .content{
+    opacity: 1;
+    font-family: 'Spectral', serif;
+   
+  }
+  
+  
+  
+  .container .card .face.face1 .content h3{
+    font-size: 2.5em;
+    color: rgb(90, 20, 133);
+    text-align: center;
+    font-family: 'Spectral', serif;
+    
+  
+  }
+  
+  
+  
+  .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(72, 14, 105, 0.8)s;
+    transform: translateY(-100px);
+    border-radius:60px;
+  }
+  
+  .container .card:hover .face.face2{
+      transform: translateY(0);
+      border-radius:0px;
+  
+  }
+  
+  .container .card .face.face2 .content p, a{
+    font-size: 10pt;
+    margin: 0 ;
+    padding: 0;
+    color:#ffffff;
+    font-family: 'Spectral', serif;
+  }
+  
+  .container .card .face.face2 .content a{
+    text-decoration:none;
+    color: rgb(234, 0, 0);
+    box-sizing: border-box;
+    outline : 1px dashed #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+  }
+  
+  .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  .fav h3{
+    color:white;
+  }
+
+  .but {
+    border: 3px solid; /* граница */
+    background-color: transparent;
+    width: 220px;
+    height: 70px;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; /* добавлены свойства для плавного перехода */
+    color: rgb(127, 42, 149);
+    font-size: 25px;
+    border-radius: 90px;
+    font-family: 'Spectral', serif;
+    
+  }
+  
+  .but:hover {
+    color: white;
+    background-color: rgba(134, 26, 167, 0.719);
+    box-shadow: 10px 10px 100px 6px rgb(164, 79, 185);
+    border: 3px solid transparent; /* убираем границу при наведении */
+    width: 230px;
+    height: 80px;
+  }
+  .content1{
+    display: flex; /* Используем flexbox для контейнера .intro1 */
+    align-items: center; /* Выравниваем по вертикали по центру */
+    font-size: 18px;
+    
+  }
+
+
+
+
+
+
+
+
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 1.3em 10%;
+    background: rgba(128, 31, 166, 0.214);
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: 'Spectral', serif;
+    transition: top 0.3s;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    font-weight:700 ;
+    font-family: 'Spectral', serif;
+    transition: 0.5s;
+  }
+  .navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: 'Spectral', serif;
+    transition: transform 0.5s, color 0.5s;
+  }
+  
+  .navbar a:hover {
+    font-size: 1.5rem;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Adjusted left position for padding */
+    width: 0; /* Set initial width to 0 */
+    height: 100%;
+    box-shadow: 10px 10px 100px 6px rgba(255, 255, 255, 0.9);
+    transition: width 0.9s;
+    border-radius: 20px;
+  }
+  
+  .navbar a:hover::before {
+    width: calc(100% + 30px); /* Adjusted width for padding on both sides */
+  }

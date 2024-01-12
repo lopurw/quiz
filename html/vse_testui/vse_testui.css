@@ -1,0 +1,333 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.str1 {
+    background:url(/html/glavnaya/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+    height: 700px;
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.h3_2{
+    font-size: 70px;
+    margin: 40px 30px 0 0;
+    text-align: center;
+    font-family: 'Spectral', serif;
+    color: rgb(127, 42, 149); /* Optional: Set text color to white or another contrasting color */
+}
+.h3_1{
+    font-size: 70px;
+    margin: 70px 30px 0 0;
+    text-align: center;
+    font-family: 'Spectral', serif;
+    color: rgb(255, 255, 255); /* Optional: Set text color to white or another contrasting color */
+}
+.content img{
+    width: 30%;
+    height: 30%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.str1 .container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    padding: 40px 0;
+
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    max-width: 1900px;
+    padding: 40px 0;
+
+    
+}
+.container .card{
+    position: relative;
+    height: 300px;
+    width: 390px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+                inset -5px -5px 5px rgba(255,255,255,0.5),
+                -5px -5px 5px rgba(0,0,0,0.05),
+                -5px -5px 5px rgba(255,255,255,0.5);
+    background-color:rgb(127, 42, 149);;
+    border-radius:50px;
+    
+    margin: 0 20px; /* Added margin */
+}
+.container .card .box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom:20px;
+    background:#ebf5fc;
+    box-shadow:0 10px 20px rgba( 0, 0, 0, 0.1);
+    border-radius:50px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: 0.5s;
+}
+.container .card:hover .box{
+    transform: translateY(-50px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    background-color:rgb(127, 42, 149);
+    
+    
+}
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .box .content h2{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 7em;
+    color:rgba(0,0,0,0.02);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.container .card:hover .box .content h2{
+    color:rgba(255, 255, 255, 0.05);
+}
+.str1 .container .card .box .content img{
+    opacity: 0.5; 
+    transition: 0.5s;
+    float: left;
+    margin: 25px 0 0 20px;
+}
+.str1 .container .card:hover .box .content img{
+    opacity: 1; 
+}
+
+.container .card .box .content h3{
+    font-size: 3em;
+    color:#777;
+    z-index: -1;
+    transition: 0.5s;
+    color:rgb(127, 42, 149);
+
+
+}
+.container .card:hover .box .content h3{
+    font-size: 3em;
+    color:white;
+    z-index: -1;
+    
+    
+
+
+}
+.container .card .box .content #p1{
+    font-size: 1.4em;
+    font-weight: 300;
+    color:rgb(3, 172, 65);
+    z-index: 1;
+    transition: 0.5s;
+    font-family: 'Spectral', serif;
+    
+
+}
+.container .card:hover .box .content #p1{
+    
+    color:white;
+    font-family: 'Spectral', serif;
+
+}
+.container .card .box .content #p2{
+    font-size: 1.4em;
+    font-weight: 100;
+    color:rgb(236, 225, 14);
+    z-index: 1;
+    transition: 0.5s;
+    font-family: 'Spectral', serif;
+    
+
+}
+.container .card:hover .box .content #p2{
+    
+    color:white;
+    font-family: 'Spectral', serif;
+
+}
+.container .card .box .content #p3{
+    font-size: 1.4em;
+    font-weight: 300;
+    color:rgb(255, 0, 0);
+    z-index: 1;
+    transition: 0.5s;
+    font-family: 'Spectral', serif;
+    
+
+}
+.container .card:hover .box .content #p3{
+    
+    color:white;
+    font-family: 'Spectral', serif;
+
+}
+.container .card:hover .box .content .infbut{
+    
+    color:white;
+    text-decoration: none;
+
+}
+.container .card:hover .box .content .infbut:hover{
+    
+    color: rgb(127, 42, 149);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 100px 6px rgb(255, 255, 255);
+    border: 3px solid transparent; /* убираем границу при наведении */
+    
+    font-family: 'Spectral', serif;
+
+}
+
+.infbut {
+    border: 3px solid; /* граница */
+    background-color: transparent;
+    width: 150px;
+    height: 40px;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s; /* добавлены свойства для плавного перехода */
+    color: rgba(126, 42, 149, 0.714);
+    
+    border-radius: 90px;
+    font-family: 'Spectral', serif;
+    margin: 8px 20px;
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    
+  }
+
+  .str2 {
+   
+    height: 700px;
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+}
+.str2 img{
+    width: 30%;
+    height: 30%;
+    opacity: 0.5; 
+}
+.str2 .container .card:hover .box .content img{
+    opacity: 1; 
+}
+
+.str3{
+   
+    height: 700px;
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+
+    background:url(/html/glavnaya/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+    
+    background-attachment: fixed;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.str3 .container .card .box .content img{
+    opacity: 0.5; 
+    transition: 0.5s;
+    float:right;
+    margin: 20px 0 0 0;
+   
+}
+.str3 .container .card:hover .box .content img{
+    opacity: 1; 
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* или другая высота, которую вы хотите использовать для подвала */
+    margin: 0;
+  }
+  
+  footer img {
+    height: 80%;
+    width: 80%;
+  }
+  /*навигация меню*/
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3em 10%;
+    background: rgba(128, 31, 166, 0.214);
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: 'Spectral', serif;
+    transition: top 0.3s;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    font-weight:700 ;
+    font-family: 'Spectral', serif;
+    transition: 0.5s;
+  }
+  .navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: 'Spectral', serif;
+    transition: transform 0.5s, color 0.5s;
+  }
+  
+  .navbar a:hover {
+    font-size: 1.5rem;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Adjusted left position for padding */
+    width: 0; /* Set initial width to 0 */
+    height: 100%;
+    box-shadow: 10px 10px 100px 6px rgba(255, 255, 255, 0.9);
+    transition: width 0.9s;
+    border-radius: 20px;
+  }
+  
+  .navbar a:hover::before {
+    width: calc(100% + 30px); /* Adjusted width for padding on both sides */
+  }

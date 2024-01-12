@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+  }
+  .str1{
+    background-image: url(/html/glavnaya/Absolute_Reality_v16_abstraction_background_dark_purple_0.jpg);
+  background-attachment: fixed;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 690px;
+    width: 100%;
+    background-position: 0 0;
+    padding: 100px 0 0 0px;
+    
+    
+    
+  }
+  
+  .zagolovok h2 {
+    margin: 0px 0px 20px 60px;
+    font-size: 60px;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+  font-family: 'Spectral', serif;
+    
+  }
+  
+  .opisanie {
+    /* Добавлено для внутреннего контейнера */
+     width: 100vh;
+     height: 400px;
+     margin: 50px;
+     background-color: rgba(126, 42, 149, 0.714);
+     border-radius: 50px;
+     float: left;
+     border: 2px solid white;
+     
+   }
+  .opisanie p{
+    font-size: 30px;
+    margin: 20px;
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+  font-family: 'Spectral', serif;
+  }
+  img{
+    width: 50vh;
+    height: 50vh;
+    margin: 50px 0 0 150px;
+  }
+  .str2{
+    background-image: url(/html/inform/backpopul1.png);
+    background-attachment: scroll;
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 780px;
+    width: 100%;
+    padding: 50px 0 50px 0px;
+    
+    
+  }
+  .blocks{
+    
+    margin:30px 30px 0 40px;
+  
+  }
+  .block {
+    width: 420px;
+    height: 599px;
+    margin:0px 9px 0 9px;
+    display: inline-block;
+    vertical-align: top;
+    
+    font-size: 30px;
+    background-color:white;
+    border-radius:50px;
+    padding: 20px 20px 20px 20px;
+    
+    
+  }
+  .klak {
+    position: relative;
+  }
+  
+  .klak p {
+    z-index: 1;
+    color: white;
+    
+    font-family: 'Spectral', serif;
+  }
+  
+  .klak {
+    background-image: url('/html/inform/klaksa.png'); /* Замените 'путь_к_вашему_изображению/круг.png' на путь к вашему изображению круга */
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 50px; /* Замените этот размер на размер вашего изображения */
+    height: 50px; /* Замените этот размер на размер вашего изображения */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; /* Цвет текста, чтобы он был виден поверх изображения */
+    float: left;
+  }
+  .right-text{
+    margin: -30px 0 0px 70px;
+    color:rgba(126, 42, 149, 0.714);
+    line-height: 1.2;
+  font-family: 'Spectral', serif;
+    
+  }
+  .down-text p{
+   color:rgba(126, 42, 149, 0.714);
+  margin: -20px 0 0 0;
+  font-family: 'Spectral', serif;
+  line-height: 1.2;
+  }
+  footer img{
+    height: 100%;
+    width: 80%;
+  }
+  footer{
+    
+    margin: 0;
+  }
+
+
+
+
+
+
+  .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 1.3em 10%;
+    background: rgba(128, 31, 166, 0.214);
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-family: 'Spectral', serif;
+    transition: top 0.3s;
+  }
+  
+  .logo{
+    font-size: 2rem;
+    color:white;
+    text-decoration: none;
+    font-weight:700 ;
+    font-family: 'Spectral', serif;
+    transition: 0.5s;
+  }
+  .navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    font-family: 'Spectral', serif;
+    transition: transform 0.5s, color 0.5s;
+  }
+  
+  .navbar a:hover {
+    font-size: 1.5rem;
+  }
+  
+  .navbar a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Adjusted left position for padding */
+    width: 0; /* Set initial width to 0 */
+    height: 100%;
+    box-shadow: 10px 10px 100px 6px rgba(255, 255, 255, 0.9);
+    transition: width 0.9s;
+    border-radius: 20px;
+  }
+  
+  .navbar a:hover::before {
+    width: calc(100% + 30px); /* Adjusted width for padding on both sides */
+  }
